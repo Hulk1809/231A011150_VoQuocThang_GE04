@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Discovery App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="app-header">
+        <div class="logo">
+            <i class="fas fa-film"></i>
+            <h1>MovieSphere</h1>
+        </div>
+        <nav class="main-menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="#">Phim mới</a></li>
+                <li><a href="231A011150_VoQuocThang_bt34.html" target="_blank">Kết quả Bài 34</a></li>
+            </ul>
+        </nav>
+        <div class="theme-switch-wrapper">
+            <label class="theme-switch" for="checkbox">
+                <input type="checkbox" id="checkbox" />
+                <div class="slider round">
+                    <i class="fas fa-sun"></i>
+                    <i class="fas fa-moon"></i>
+                </div>
+            </label>
+        </div>
+    </header>
+
+    <div class="layout-container">
+        <aside class="sidebar">
+            <div class="filter-section">
+                <h3>Tìm kiếm</h3>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="searchInput" placeholder="Nhập tên phim...">
+                </div>
+            </div>
+            <div class="filter-section">
+                <h3>Thể loại</h3>
+                <div id="genreFilters" class="genre-list">
+                    <!-- Checkboxes will be injected here by JS -->
+                </div>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <div class="results-header">
+                <h2>Khám phá phim</h2>
+                <span id="resultCount">0 kết quả</span>
+            </div>
+            <div class="movie-grid" id="movieGrid">
+                <!-- Movie cards will be injected here by JS -->
+            </div>
+        </main>
+    </div>
+
+    <!-- Modal for Movie Details -->
+    <div id="movieModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalBody" class="modal-body">
+                <!-- Content injected here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
