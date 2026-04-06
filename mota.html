@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mô tả cách làm - 231A011150 Võ Quốc Thắng</title>
+    <style>
+        body {
+            font-family: 'Outfit', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #0f0f1a;
+            color: #f5f5f5;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1c1c2e;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid #2a2a3f;
+        }
+        h1 {
+            color: #ff3366;
+            border-bottom: 2px solid #2a2a3f;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        h2 {
+            color: #4da6ff;
+            margin-top: 30px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 15px;
+        }
+        .student-info {
+            text-align: center;
+            color: #ccc;
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+        code {
+            background-color: #2a2a3f;
+            padding: 3px 6px;
+            border-radius: 4px;
+            color: #ffcc00;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mô Tả Cách Làm Các Bài Tập Trong Đề Thi</h1>
+        <div class="student-info">
+            <strong>Họ tên:</strong> Võ Quốc Thắng | <strong>Mã SV:</strong> 231A011150
+        </div>
+
+        <h2>1. Thiết kế Giao diện (HTML/CSS)</h2>
+        <ul>
+            <li><strong>Bố cục:</strong> Sử dụng <code>CSS Grid</code> và <code>Flexbox</code> để chia layout thành các phần rõ ràng (Header, Sidebar chứa bộ lọc, và Main Content để hiển thị danh sách phim). Thiết kế Responsive đảm bảo hiển thị tốt trên nhiều thiết bị.</li>
+            <li><strong>Theme:</strong> Xây dựng giao diện với gam màu tối (Dark Mode) làm chủ đạo theo phong cách Neon, kết hợp các hiệu ứng hover, shadow mượt mà giúp ứng dụng trông hiện đại và nổi bật.</li>
+            <li><strong>Font và Icon:</strong> Tích hợp font chữ <code>Outfit</code> từ Google Fonts và bộ icon từ <code>FontAwesome</code>.</li>
+        </ul>
+
+        <h2>2. Xử lý Logic và Tương tác (JavaScript)</h2>
+        <ul>
+            <li><strong>Chế độ Sáng/Tối (Theme Toggle):</strong> Tạo tính năng chuyển đổi Light/Dark mode. Dữ liệu theme được lưu vào <code>localStorage</code> để ghi nhớ lựa chọn của người dùng trong các lần truy cập sau.</li>
+            <li><strong>Lọc và Tìm kiếm:</strong> Viết thuật toán lọc phim kết hợp giữa thanh tìm kiếm (theo tên) và danh sách thể loại (kiểu checkbox). Áp dụng kỹ thuật <code>Debounce</code> (độ trễ 400ms) cho thanh tìm kiếm nhằm tối ưu hóa hiệu năng, giảm số lần gọi hàm không cần thiết khi người dùng đang gõ phím.</li>
+            <li><strong>Modal chi tiết phim:</strong> Cài đặt sự kiện khi click vào một bộ phim (Movie Card), mở ra một hộp thoại (Modal) pop-up động chứa các thông tin nâng cao của phim như: mô tả, diễn viên, đạo diễn.</li>
+        </ul>
+
+        <h2>3. Tích hợp Trang Kết quả & Tối ưu hóa</h2>
+        <ul>
+            <li><strong>Bổ sung Menu:</strong> Thêm đường dẫn vào Header Menu để liên kết mở sang trang bài làm thực hành cũ (Bài 34) cũng như trang mô tả này theo đúng yêu cầu đề bài.</li>
+            <li><strong>Watermark Tự động:</strong> Ở trang bài tập 34, sử dụng thuộc tính `position: absolute` trong CSS để tạo hiệu ứng đóng dấu nhãn bản quyền (chứa Họ tên và MSV) đè lên hình ảnh chụp màn hình một cách tự động và chuyên nghiệp.</li>
+            <li><strong>Tối ưu Ảnh (Bài 4):</strong> Về tối ưu kích thước ảnh, dự án tận dụng trực tiếp ảnh chuẩn với kích cỡ `w500` từ hệ thống CDN của TMDB để đảm bảo tốc độ tải trang nhanh nhất. Với các tài nguyên mạng cục bộ thiết lập nguyên tắc đi qua công cụ nén (như TinyPNG).</li>
+            <li><strong>Triển khai (Deployment):</strong> Toàn bộ source code được quản lý phiên bản qua <code>Git</code> và được đẩy (push) lên một Repository mới trên <code>GitHub</code> của cá nhân (`Hulk1809`). Tính năng <code>GitHub Pages</code> được kích hoạt để đưa dự án lên môi trường online (thực tiễn).</li>
+        </ul>
+    </div>
+</body>
+</html>
